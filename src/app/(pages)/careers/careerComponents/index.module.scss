@@ -1,0 +1,77 @@
+.careerPage {
+    //font-family: Arial, sans-serif;
+    color: #656871;
+    padding: 20px;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: #1c1c1e;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    // gap: 10px;
+}
+
+.description {
+    flex: 1;
+    // line-height: 1.6;
+}
+
+.widgetContainer {
+    margin: 2px; 
+    text-align: left; 
+    line-height: 1.6; 
+    font-size: 1.05rem;
+}
+
+.image {
+    float: right;
+    margin-left: 20px;
+    max-width: 100%; 
+    height: auto; 
+}
+
+.positions h1 {
+    margin-bottom: 40px;
+}
+
+.positions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.positions li {
+    margin-bottom: 10px;
+}
+
+.positions a {
+    color: #254291;
+    text-decoration: none;
+}
+
+.positions span {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.footer a {
+    color: #254291;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+  

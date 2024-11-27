@@ -1,0 +1,20 @@
+@use "../shared.scss";
+
+.wrap {
+  position: relative;
+  margin-bottom: var(--base);
+}
+
+.input {
+  @include shared.formInput;
+  border: 1px solid var(--border-color, #ccc); 
+  border-radius: 4px; 
+  background-color: white;
+  padding: 8px; 
+  outline: none; 
+}
+
+.label {
+  margin-bottom: 10px;
+  display: block;
+}

@@ -1,0 +1,37 @@
+.main{
+    display: flex;
+    margin: 4%;
+}
+.button:hover{
+    color: white;
+    background-color: #113163;
+}
+.searchbox{
+    margin-bottom: 10%;
+}
+.categories{
+    margin-top: 8%;
+}
+.parttext{
+    cursor: pointer;
+    margin-bottom: 4%;
+}
+.productc{
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+@media (max-width: 700px) {
+    .productc {
+        flex: 1 1 calc(40%);
+    }
+}
+@media (max-width: 500px) {
+    .productc {
+        flex: 1 1 calc(75% - 10px);
+    }
+}

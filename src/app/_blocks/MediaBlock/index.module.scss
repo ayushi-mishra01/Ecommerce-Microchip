@@ -1,0 +1,27 @@
+@import '../../_css/common';
+
+.mediaBlock {
+  position: relative;
+  display: flex;
+  width: 100%;
+  gap: calc(var(--base) * 1);
+  align-items: center;
+
+  @include large-break {
+    gap: calc(var(--base) * 1);
+  }
+
+  @include mid-break {
+    flex-direction: column;
+  }
+}
+
+.fullscreen {
+  // Styles specific to fullscreen position
+}
+
+.caption {
+  color: var(--theme-elevation-500);
+  margin-top: var(--base);
+  height: 0;
+}

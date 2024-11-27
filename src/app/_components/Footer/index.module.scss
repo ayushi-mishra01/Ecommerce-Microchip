@@ -1,0 +1,269 @@
+@use '../../_css/queries.scss' as *;
+
+.footer {
+  padding: 2%;
+  background-color: #113163;
+  color: white;
+}
+
+:global([data-theme="dark"]) {
+  .footer {
+    background-color: var(--theme-elevation-50);
+    color: var(--theme-elevation-1000);
+  }
+}
+
+.nav {
+  display: flex;
+  gap: calc(var(--base) / 4) var(--base);
+  align-items: center;
+  flex-wrap: wrap;
+  opacity: 1;
+  transition: opacity 100ms linear;
+  visibility: visible;
+
+  > * {
+    text-decoration: none;
+  }
+}
+
+// -----------------------------------------------------------------------------------
+
+
+.footer1 {
+  color: white;
+  width:100%;
+  background-color: #113163;
+}
+ 
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1350px;
+  margin: 0px auto;
+  padding-top: 40px;
+  font-size: 16px;
+  line-height: 2.4;
+
+  @media (min-width: 1000px) {
+    margin-bottom: 100px;
+}
+}
+ 
+.logo img {
+  max-width: 250px;
+}
+ 
+.newsletter h3,
+.contactInfo h3,
+.services h3,
+.hours h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+ 
+.newsletter {
+  width: 100%;
+  max-width: 250px; 
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+ 
+.logo {
+  max-width: 100%; 
+  margin-bottom: 20px; 
+}
+ 
+.subscribe {
+  width: 90%; 
+}
+
+.location {
+  margin-left: 1rem;
+}
+ 
+.newsletter input {
+  padding: 8px;
+  border-radius: 1px;
+  border: none;
+  width: 80%; 
+  margin-bottom: 5%; 
+  border: 2px solid #f5d949;
+}
+ 
+.newsletter button {
+  padding: 8px;
+  background-color: #f5d949;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  width: 80%; 
+  border: 2px solid #f5d949
+}
+
+.contactInfo p{
+  color: #FFFFFF91;
+  margin: -2px 0;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.contactInfo p a{
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.services ul {
+  list-style-type: none;
+  padding: 0;
+}
+ 
+.services ul li {
+  margin: -2px 0;
+  font-size: 16px;
+}
+ 
+.services ul li a{
+  text-decoration: none;
+}
+
+.hiringButton {
+  font-size: 16px;
+  background-color: transparent;
+  border: 4px solid #f5d949;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: yellow;
+  cursor: pointer;
+  margin-top: 10px;
+
+  &:hover {
+    border: 4px solid white;
+    // background-color: white; 
+    color: white;
+}
+}
+ 
+.hours p {
+  margin: -2px 0;
+  font-size: 16px;
+}
+ 
+.socials a {
+  color: white;
+  margin-right: 18px;
+  font-size: 24px;
+}
+
+// .bottomBar {
+//   display: flex;
+//   justify-content: space-between; 
+//   align-items: center;
+//   padding: 15px 40px;
+//   background-color: #113163; 
+//   border-top: 1px solid rgba(255, 255, 255, 0.2); 
+//   font-size: 14px;
+//   color: #FFFFFF91;
+// }
+ 
+// .bottomBar p, .bottomBar a {
+//   margin: 0;
+// }
+ 
+// .bottomBar a {
+//   color: white;
+//   text-decoration: none;
+// }
+ 
+// .bottomBar a:hover {
+//   text-decoration: underline; 
+// }
+
+.bottomBar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 15px 5%;
+  max-width: 1350px;
+  margin: 0 auto; 
+  background-color: #113163; 
+  border-top: 1px solid rgba(255, 255, 255, 0.2); 
+  font-size: 14px;
+  color: #FFFFFF91;
+}
+
+.bottomBar p, .bottomBar a {
+  margin: 0;
+}
+
+.bottomBar a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.linkContainer {
+  display: flex;
+  align-items: center;
+  margin-left: auto; 
+}
+
+.bottomBar a:hover {
+  text-decoration: underline; 
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter,
+  .contactInfo,
+  .services,
+  .hours {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 20px;
+    text-align: center; 
+  }
+
+  .logo img {
+    max-width: 150px; 
+  }
+
+  .socials a {
+    font-size: 16px; 
+    margin-right: 8px;
+  }
+
+  .bottomBar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bottomBar a {
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer1 {
+    padding: 20px 0; 
+  }
+
+  .newsletter input,
+  .newsletter button {
+    width: 100%;
+  }
+
+  .hiringButton {
+    font-size: 16px; 
+  }
+}

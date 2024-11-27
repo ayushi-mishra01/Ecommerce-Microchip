@@ -1,0 +1,183 @@
+@use '../../../_css/queries.scss' as *;
+
+.nav {
+  display: flex;
+  gap: calc(var(--base) / 4) var(--base);
+  align-items: center;
+  flex-wrap: wrap;
+  opacity: 1;
+  transition: opacity 100ms linear;
+  visibility: visible;
+
+  > * {
+    text-decoration: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: #2f20d1;
+    margin-left: 10px;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menuContainer {
+  background-color: #fff;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.menuBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: -10px;
+}
+
+.menuItem {
+  border-top: 3px solid transparent;
+  position: relative;
+  padding-top: 20px;
+  border-top: 3px solid transparent; 
+  transition: color 0.3s, border-top 0.3s;
+}
+
+.menuItem:hover {
+  border-top-color: #f5d949;
+}
+
+.menuItem:hover .icon {
+  color: #f5d949; 
+}
+
+.menuItem:hover .menuLink{
+  color: black; 
+}
+
+.activeItem {
+  border-top: 3px solid #f5d949;
+}
+
+.menuLink {
+  text-decoration: none;
+  color: #7c7d81;
+  font-weight:600;
+  font-size: 18px;
+  // font-size: 0.9rem;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+.triangleArrow1 {
+  margin-left: 2px;
+  font-size: 17px;
+}
+
+.triangleArrow {
+  margin-left: 2px;
+  font-size: 17px;
+}
+
+.submenuContainer {
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submenuItem {
+  position: relative; 
+  padding-bottom: 5px;
+}
+
+.subsubmenuContainer {
+  position: absolute; 
+  top: 0; 
+  left: 100%; 
+  background-color: #fff; 
+  padding: 10px;
+  display: none; 
+  flex-direction: column;
+  z-index: 1000;
+  width: 250px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submenuItem:hover .subsubmenuContainer {
+  display: flex; 
+}
+
+.submenuLink {
+  padding: 5px;
+  text-decoration: none;
+  color: #717173;
+}
+
+.submenuLink:hover {
+  color: black;
+  // border-left: 3px solid #F5D949;
+}
+
+.subsubmenuLink {
+  padding: 5px;
+  text-decoration: none;
+  color: #717173;
+}
+
+.subsubmenuLink:hover {
+  color: black;
+}
+.icon {
+  margin-right: 6px; 
+  font-size: 20px;  
+  margin-bottom: 2px;
+  color: #AFB0B5;
+}
+
+
+
+.industryInfoHighlight {
+  background-color:#F7F7F8;
+  padding-top:7px;
+  border-left: 4px solid #C7181C;
+  border-top: 1px solid #C7181C;
+  border-right: 1px solid #C7181C;
+  border-bottom: 1px solid #C7181C;
+  transition: border-color ease 0.3s;
+   
+  &:hover{
+    border-left: 4px solid #F5D949;
+    border-top: 1px solid #F5D949;
+    border-right: 1px solid #F5D949;
+    border-bottom: 1px solid #F5D949;
+  }
+}
+
+.industryInfoHighlight:hover .microchipIcon{
+  color:#F5D949;
+}
+.iconWithText {
+  padding: 0 5px;
+  margin-left: 7px;
+}
+.microchipIcon {
+  width: 16px; 
+  height: 16px; 
+  fill: currentColor;
+  margin: 0; 
+  padding: 0;
+}

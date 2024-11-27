@@ -1,0 +1,39 @@
+.tableContainer {
+  max-height: 500px;
+  overflow: auto;
+}
+  
+.tableRow:nth-of-type(odd) {
+  background-color: #f3f3f3;
+}
+
+.tableRow:hover{
+  background-color: #F1F5F9;
+}
+
+.headingProductContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+  padding: 20px;
+  width: 100%;
+}
+
+.headingProduct {
+  font-size: 1.5rem;
+  color: black; 
+  font-weight: 600;
+  line-height: 1.2;
+  max-width: 90%; 
+  margin: 0 auto; 
+}
+
+
+.tableCellMfrPart{
+  min-width: 200px;
+}
+
+.image{
+  filter: sepia() hue-rotate(180deg) saturate(140%) brightness(90%) contrast(128%);
+}

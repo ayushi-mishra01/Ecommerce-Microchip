@@ -1,0 +1,126 @@
+@import '../../_css/common';
+
+.noPadding {
+  padding: 20px;
+}
+
+.carouselWrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  .carousel {
+    position: relative;
+  }
+
+  .prev,
+  .next {
+    background: none;
+    border: none;
+    color: rgb(192, 190, 190);
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    &:hover {
+      color: var(--theme-text-hover);
+    }
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+    padding-left: 15px;
+  }
+
+
+  .slides {
+    .slick-track {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .card {
+    padding: var(--base);
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+    width: 100% !important;  // Ensure cards take up full width of their container
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .media {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .caption {
+      color: var(--theme-elevation-500);
+      margin-top: var(--base);
+      height: auto; // Ensure caption is visible if it exists
+    }
+  }
+
+  .content {
+    width: 100%;
+    margin-top: var(--base);
+    color: var(--theme-text-primary);
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      color: var(--theme-link);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) { 
+  .carouselWrapper {
+    .contentMediaBlock {
+      display: flex;
+      gap: calc(var(--base) * 1);
+      align-items: center;
+
+      .content {
+        width: 75%;
+      }
+
+      .media {
+        width: 25%;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .carouselWrapper {
+    .contentMediaBlock {
+      flex-direction: column;
+
+      .invert {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+
+.tableContainer {
+  max-height: 500px;
+  overflow: auto;
+}
+  
+.tableRow:nth-of-type(odd) {
+  background-color: #f3f3f3;
+}
+  
+.headingProduct{
+  margin-left: 35%;
+  margin-bottom: 1%;
+  font-size: 2rem;
+}
+
+.tableCellMfrPart{
+  min-width: 200px;
+}
+
+.image{
+  filter: sepia() hue-rotate(180deg) saturate(140%) brightness(90%) contrast(128%);
+}

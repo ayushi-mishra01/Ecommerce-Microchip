@@ -1,0 +1,179 @@
+.darkline {
+    border: 2px;
+    height: 2px;
+    background: black;
+    width: 100%;
+  }
+  
+  .text {
+    position: absolute;
+    padding: 10 5px;
+    font-size: 16px;
+    margin-left: -22%;
+    margin-top: 5%;
+  }
+  
+  .container {
+    border: 1px solid #ccc;
+    margin: 0 15%;
+    padding: 16px;
+    min-height: 100vh;
+    margin-top: 4%;
+    margin-bottom: 5%;
+  }
+  
+  .logo {
+    float: right;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    max-width: 200px;
+    height: auto;
+    margin-top: 4%;
+  }
+  
+  .text {
+    font-size: 25px;
+    line-height: 1.6;
+  }
+  
+  .categorylist {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .categorybox ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0; 
+  }
+  
+  .categorybox .allmanufacturers {
+    display: block;
+    font-weight: bold; 
+    margin-top: 40px; 
+    margin-left: -170%;
+    text-align: left;
+  }
+  
+  .categorybox {
+    width: 100%;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+  }
+  
+  .tabscontainer {
+    align-self: center;
+    margin-top: 24px;
+  }
+  
+  .darkline {
+    margin-top: 24px;
+  }
+  
+  .textfield {
+    float: right;
+    margin-top: 16px;
+  }
+  
+  @media (max-width: 620px) {
+    .container {
+      margin: 0 2%;
+      padding: 8px;
+    }
+  
+    .logo {
+      float: none;
+      margin: 0 auto 16px;
+      display: block;
+      max-width: 150px;
+    }
+  
+    .text {
+      font-size: 20px;
+    }
+  
+    .productcategories {
+      margin-top: 10%;
+    }
+  
+    .categorylist {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .categorybox {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+    .categorybox .allmanufacturers {
+      margin-top: 16px;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .tabscontainer {
+      margin-top: 12px;
+    }
+  
+    .darkline {
+      margin-top: 12px;
+    }
+  
+    .textfield {
+      float: none;
+      margin: 16px auto;
+      display: block;
+    }
+  
+    .categorybox ul {
+      padding: 0;
+      list-style: none;
+    }
+  
+    .categorybox li {
+      margin: 8px 0;
+    }
+  }
+  
+  @media (max-height: 720px) {
+    .container {
+      min-height: 80vh;
+    }
+  
+    .productcategories {
+      margin-top: 10%;
+    }
+  }
+  
+  .griditem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px; 
+  }
+  
+  .papercontent {
+    padding: 16px;
+  }
+  
+  .allmanufacturers {
+    text-align: center;
+    margin-top: 8px; 
+    font-size: large;
+    text-align: left;
+  }
+  .productc{
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+  
+  
+  
+  
